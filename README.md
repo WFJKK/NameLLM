@@ -6,19 +6,11 @@ A (modular) character-level Transformer trained on the standard `names.txt`. Thi
 
 ##  Project Structure
 
-.
-├── namegen/                  # Core package for name generation
-│   ├── __init__.py           # Package initializer
-│   ├── config.py             # Configuration of hyperparameters
-│   ├── data.py               # Data loading and preprocessing
-│   ├── model.py              # Model architecture definition
-│   ├── namedataset.py        # Dataset class for names
-│   └── name_generation.py    # Name generation logic and (simple) sampling
-├── generating_names.py       # Script to generate names using the trained model
-├── names.txt                 # Dataset of names
-├── requirements.txt          # Python dependencies
-├── training.py               # Training script for the model
-└── README.md                 # Project overview and instructions
+- `/namegen`: main package files
+- `generating_names.py`: script for generating names
+- `requirements.txt`: dependencies
+- `names.txt`: text file of names used for training and validation
+
 
 
 ---
