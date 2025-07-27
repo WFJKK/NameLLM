@@ -9,7 +9,7 @@ A (modular) character-level Transformer trained on the standard `names.txt`. Thi
 - `/namegen`: main package files
 - `generating_names.py`: script for generating names
 - `requirements.txt`: dependencies
-- `names.txt`: text file of names used for training and validation
+- `/data`: includes names.txt, which is text file of names used for training and validation
 
 
 

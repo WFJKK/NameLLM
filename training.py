@@ -1,7 +1,6 @@
 """Trains the transformer model for character-level name generation using both token and position inputs."""
 
 import os
-
 import torch
 import torch.nn as nn
 import torch.optim as optim

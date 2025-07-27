@@ -3,15 +3,16 @@ Prepares and tokenizes a dataset of names for training a character-level languag
 Splits the data into training and validation sets, constructs PyTorch datasets and dataloaders
 with padding and custom collation for variable-length sequences.
 """
-
+import os 
 import random
-
 from torch.utils.data import DataLoader
-
 from .namedataset import NameDataset
 
-filepath_names = "/Users/kames/Desktop/NN/VISUALCODE/GitHub/nameLLM/names.txt"
-with open(filepath_names, "r") as read_text:
+module_dir = os.path.dirname(__file__)
+
+names_path = os.path.abspath(os.path.join(module_dir, '..', 'data', 'names.txt'))
+
+with open(names_path, "r") as read_text:
     names = read_text.read().splitlines()
 
 all_characters = sorted(list(set("".join(names))))

@@ -1,7 +1,6 @@
 """Generate 5 example names using trained decoder-only transformer model."""
 
 import torch
-
 from namegen.config import *
 from namegen.data import MAX_SEQ_LEN, PADDING_IDX, itos, stoi, token_dim
 from namegen.model import Transformermodel
