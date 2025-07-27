@@ -30,8 +30,8 @@ A (modular) character-level Transformer trained on the standard `names.txt`. Thi
 
 1. Clone this repo:
    ```bash
-   git clone https://github.com/yourusername/char-transformer-namegen.git
-   cd char-transformer-namegen
+   git clone https://github.com/WFJKK/ShakespeareLLM.git
+   cd ShakespeareLLM
    ```
 2. Install dependencies:
    ```bash
